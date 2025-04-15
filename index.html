@@ -28,6 +28,20 @@
       font-size: 1.2rem;
       font-weight: 300;
     }
+    nav {
+      background: #1d3557;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-size: 1.1rem;
+    }
+    nav a:hover {
+      color: #f1f1f1;
+    }
     section {
       padding: 2rem;
       max-width: 960px;
@@ -94,6 +108,31 @@
       color: white;
       margin-top: 3rem;
     }
+    footer a {
+      color: white;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+    .back-to-top {
+      display: inline-block;
+      margin-top: 1rem;
+      background-color: #1d3557;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      text-decoration: none;
+    }
+    .back-to-top:hover {
+      background-color: #8e9eab;
+    }
+    .profile-photo {
+      border-radius: 50%;
+      width: 120px;
+      height: 120px;
+      margin-bottom: 20px;
+    }
     @media (max-width: 600px) {
       header h1 {
         font-size: 2rem;
@@ -110,8 +149,16 @@
     <p>Data Analyst | Turning Data into Insight</p>
   </header>
 
-  <section>
+  <nav>
+    <a href="#about">About Me</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
     <h2>About Me</h2>
+    <img src="profile.jpg" alt="Saravanan" class="profile-photo" />
     <p>
       I'm a passionate Data Analyst from Manali with a background in Computer Applications.
       I specialize in transforming raw data into actionable insights. My goal is to work
@@ -119,7 +166,7 @@
     </p>
   </section>
 
-  <section>
+  <section id="skills">
     <h2>Skills & Tools</h2>
     <ul>
       <li>Excel, SQL, Python (Pandas, NumPy)</li>
@@ -129,7 +176,7 @@
     </ul>
   </section>
 
-  <section>
+  <section id="projects">
     <h2>Projects</h2>
     <div class="project-container">
       <div class="project">
@@ -137,39 +184,36 @@
         <p><strong>Description:</strong> Built an interactive dashboard to analyze regional sales trends, top products, and revenue growth.</p>
         <p><strong>Tools:</strong> Excel, Power BI</p>
         <p><strong>Key Features:</strong> KPIs, slicers, custom visuals, trend analysis</p>
+        <a href="https://github.com/saravanan/sales-dashboard" target="_blank">View on GitHub</a>
       </div>
       <div class="project">
         <h3>Customer Churn Analysis (Python)</h3>
         <p><strong>Description:</strong> Analyzed customer data to identify churn patterns and suggest retention strategies.</p>
         <p><strong>Tools:</strong> Python, Jupyter Notebook</p>
         <p><strong>Outcome:</strong> Found 3 major churn factors using visualization and correlation analysis</p>
+        <a href="https://github.com/saravanan/churn-analysis" target="_blank">View on GitHub</a>
       </div>
       <div class="project">
         <h3>SQL Retail Analytics</h3>
         <p><strong>Description:</strong> Wrote complex SQL queries to extract business insights from a retail database.</p>
         <p><strong>Tools:</strong> MySQL</p>
         <p><strong>Focus:</strong> Product performance, segmentation, revenue trends, top customers</p>
+        <a href="https://github.com/saravanan/sql-analytics" target="_blank">View on GitHub</a>
       </div>
     </div>
   </section>
 
-  <section>
-    <h2>Certifications</h2>
-    <ul>
-      <li>Google Data Analytics Certificate – Coursera</li>
-      <li>Power BI for Beginners – Udemy</li>
-    </ul>
-  </section>
-
-  <section class="contact">
+  <section id="contact" class="contact">
     <h2>Contact Me</h2>
     <a href="mailto:your.email@example.com">your.email@example.com</a>
-    <a href="#">LinkedIn: linkedin.com/in/saravanan</a>
-    <a href="#">GitHub: github.com/saravanan</a>
+    <a href="https://www.linkedin.com/in/saravanan" target="_blank">LinkedIn</a>
+    <a href="https://github.com/saravanan" target="_blank">GitHub</a>
+    <a href="resume.pdf" target="_blank">Download Resume</a>
   </section>
 
   <footer>
     <p>&copy; 2025 Saravanan | Data Analyst Portfolio</p>
+    <a href="#top" class="back-to-top">Back to Top</a>
   </footer>
 </body>
 </html>
